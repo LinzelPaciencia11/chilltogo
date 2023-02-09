@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class  ChiliToGoLastName {
+
+ 
+
+   public static void main(String[] args){
+
+       
+
+       Scanner sc = new Scanner(System.in);
+
+int adult, child, adultsCustomer, childCustomer;
+
+adult = 7;
+
+child = 4;
+
+double childCost, adultCost;
+
+System.out.print("Adult: $");
+
+adultsCustomer = sc.nextInt();
+
+System.out.print("Child: $");
+
+childCustomer = sc.nextInt();
+
+double Totaladult = adultsCustomer * 7;
+
+adultCost = 4.35 * adultsCustomer;
+
+double profitAdult = Totaladult - adultCost;
+
+double Totalchild = childCustomer * 4;
+
+childCost= 3.10 * childCustomer;
+
+double profitChild = (double)Totalchild - childCost;
+
+System.out.printf("Adult profit: $%.2f\n", profitAdult);
+
+System.out.printf("Child profit: $%.2f", profitChild);
+
+double total = profitChild + profitAdult;
+
+System.out.printf("\n Total profit is $%.2f", total); 
+
+}
+
+}
